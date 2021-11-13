@@ -1,0 +1,21 @@
+"""
+defines graphQL schema, defines a query type with one field called info
+! means field is required and can't be null
+ """
+
+ 
+type Query {
+  info: String!
+  feed: [Link!]!
+}
+
+type Mutation {
+  post(url: String!, description: String!): Link!
+  delete(id: ID!): Link!
+}
+
+type Link {
+  id: ID!
+  description: String!
+  url: String!
+}
