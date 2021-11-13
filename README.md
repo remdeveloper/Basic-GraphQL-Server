@@ -2,8 +2,3 @@
 
 Start GraphQL Server: 
 ```node src/index.js```
-
-
-
-
-# Basic-GraphQL-Server
